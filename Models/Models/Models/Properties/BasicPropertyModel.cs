@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace API_V16.Models.Properties
+{
+    public class BasicPropertyModel
+    {
+        public string ID { get; set; }
+        public string Code { get; set; }
+        public string Name { get; set; }
+        public DataType DataTypes { get; set; }
+        public string Description { get; set; }
+
+    }
+    public enum DataType
+    {
+        Text,
+        Number,
+        Float,
+        File
+    }
+}
